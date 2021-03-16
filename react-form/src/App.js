@@ -1,17 +1,17 @@
 import './App.css';
 import React from 'react';
-import ReactComponentApi from './react-component-API';
-import ForceUpdate from './ForceUpdate';
-function App() {
+import TodoList from './TodoList';
 
+let destination = document.querySelector("#container")
+function App() {
   return (
     <div className="App">
-      <ReactComponentApi />
-      <ForceUpdate />
+      <h1>Todolist</h1>
+        <TodoList/>
     </div>
 
   );
-
+  
 }
 
 export default App;
