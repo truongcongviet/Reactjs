@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import ReactRefs from './react-refs';
+import ReactKey from './react-key';
 
 function App() {
   return (
     <div className="App">
-        <ReactRefs></ReactRefs>
+        <ReactKey></ReactKey>
     </div>
   );
 }
