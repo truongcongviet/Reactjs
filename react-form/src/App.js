@@ -1,13 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
-import ReactKey from './react-key';
+import ReactRouter from './reactRouter';
+import Home from './Home';
+import About from './About';
+import Contact from './Contact';
+import { BrowserRouter as Router, Link, Route } from "react-router-dom";
 
 function App() {
+
   return (
-    <div className="App">
-        <ReactKey></ReactKey>
-    </div>
+    
+      <Router history={Router}>
+        <Route path="/" component={App}>
+          <ReactRouter component={Home} />
+          <Route path="home" component={Home} />
+          <Route path="about" component={About} />
+          <Route path="contact" component={Contact} />
+        </Route>
+      </Router>
+   
   );
+
 }
 
 export default App;
