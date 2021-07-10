@@ -17,7 +17,7 @@ class ReactEvent extends React.Component {
          <div>
             <button onClick = {this.updateState}>CLICK</button>
             <h1>Hello world 222</h1>
-            <h1>Test git demo test 3</h1>
+            <h1>Test git demo</h1>
             <h4>{this.state.data}</h4>
          </div>
       );
